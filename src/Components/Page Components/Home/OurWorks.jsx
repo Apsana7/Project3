@@ -54,7 +54,7 @@ function OurWorks() {
              
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10  '>
                     {images.map((val, i) => (
-                        <div key={i} className='relative group overflow-hidden rounded-xl shadow-lg w-96 aspect-square  '>
+                        <div key={i} className='relative group overflow-hidden rounded-xl shadow-lg w-full aspect-square  '>
                             <img
                                 src={val.image}
                                 alt={val.title}
