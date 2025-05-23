@@ -1,10 +1,10 @@
 import React from 'react'
-import image1 from '../../../assets/Banner.jpg'
-import image2 from '../../../assets/beauteI.jpg'
-import image3 from '../../../assets/beauteIII.jpg'
-import image4 from '../../../assets/coffee4.jpg'
-import image5 from '../../../assets/image5.jpg'
-import image6 from '../../../assets/Banner.jpg'
+import image1 from '../../../assets/LP3.webp'
+import image2 from '../../../assets/LP4.webp'
+import image3 from '../../../assets/LP5.webp'
+import image4 from '../../../assets/LP6.webp'
+import image5 from '../../../assets/LP7.webp'
+import image6 from '../../../assets/LP8.webp'
 
 function OurWorks() {
     const images = [

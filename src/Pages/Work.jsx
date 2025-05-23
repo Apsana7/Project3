@@ -1,9 +1,10 @@
 import React from 'react'
+import OurWorks from '../Components/Page Components/Home/OurWorks'
 
 function Work() {
   return (
     <div>
-      work
+      <OurWorks/>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import MainNav from '../Components/Navigation/MainNav'
 import { Outlet } from 'react-router-dom'
 import here from '../assets/Banner.jpg'
+import Footer from '../Components/Footer/Footer'
 
 
 function Layout() {
@@ -16,6 +17,7 @@ function Layout() {
       <div>
         <Outlet />
       </div>
+      <Footer/>
     </div>
   )
 }
