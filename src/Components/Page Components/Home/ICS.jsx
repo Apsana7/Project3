@@ -28,7 +28,7 @@ function ICS() {
   ];
 
   return (
-    <div className='w-full bg-white min-h-screen flex items-center justify-center'>
+    <div className='w-full bg-white h-lvh flex items-center justify-center'>
       <div className='w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
         {data.map((val, index) => (
           <div key={index} className='relative h-96 flex flex-col justify-center gap-6 p-6'>

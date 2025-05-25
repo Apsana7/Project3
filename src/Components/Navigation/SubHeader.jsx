@@ -10,11 +10,11 @@ function SubHeader() {
       <div className='mx-auto flex w-10/12 items-center justify-between text-sm text-white gap-4'>
         
             <div className='flex  gap-4'>
-                <div className='flex'>
+                <div className='flex gap-1'>
                     <div>Phone:</div>
                     <div className='text-[#32DBC6]'>+1236459878</div>
                 </div>
-                <div className='flex'>
+                <div className='flex gap-1'>
                     <div>Email:</div>
                     <div className='text-[#32DBC6]'>info@yourdomain.com</div>
                 </div>

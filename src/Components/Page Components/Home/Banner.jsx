@@ -3,12 +3,12 @@ import Typewriter from 'typewriter-effect';
 
 function Banner() {
   return (
-    <div className="w-full h-lvh flex items-center justify-center">
-      <div className="text-center text-white w-full flex flex-col gap-12 items-center justify-center">
+    <div className="w-full min-h-screen flex items-center justify-center  px-4">
+      <div className="text-center text-white w-full max-w-4xl flex flex-col gap-10 items-center justify-center py-10">
 
-        <div className=' w-2/3 flex flex-col gap-6 mt-30'>
-          <div className="text-5xl flex gap-4 items-center justify-center font-semibold   ">
-            <span className=''>We love to Build </span>
+        <div className="w-full flex flex-col gap-6">
+          <div className="text-3xl sm:text-4xl md:text-5xl flex flex-wrap gap-2 items-center justify-center font-semibold">
+            <span>We love to Build</span>
             <span>
               <Typewriter
                 options={{
@@ -18,27 +18,27 @@ function Banner() {
                   deleteSpeed: 30,
                 }}
                 onInit={(typewriter) => {
-                  typewriter.typeString('Mobile Apps')
+                  typewriter
+                    .typeString('Mobile Apps')
                     .pauseFor(1500)
                     .deleteAll()
                     .typeString('WordPress')
                     .pauseFor(1500)
                     .deleteAll()
-
                     .start();
                 }}
               />
             </span>
-           
           </div>
-          <div className="text-xl">Free Web template by</div>
+          <div className="text-base sm:text-lg text-gray-300">Free Web template by <span className='text-teal-500'>Colorlib</span></div>
         </div>
 
-        <button className='w-fit h-fit px-3 cursor-pointer text-black py-4 rounded-2xl bg-blue-400 hover:bg-blue-600 hover:text-white'>watch video</button>
+        <button className="px-6 py-3 rounded-2xl bg-blue-400 text-black hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm sm:text-base">
+          Watch Video
+        </button>
       </div>
     </div>
   );
 }
 
 export default Banner;
-
