@@ -42,7 +42,7 @@ function OurWorks() {
 
     return (
         <div className='bg-gray-50 w-full h-fit flex items-center justify-center'>
-            <div className='w-full flex flex-col items-center justify-center py-16'>
+            <div className='w-full mx-6 flex flex-col items-center justify-center py-16'>
             
                 <div className='flex flex-col gap-6 items-center'>
                     <div className='text-5xl font-medium'>Our Works</div>
@@ -61,7 +61,7 @@ function OurWorks() {
                                 className='w-full h-full object-cover transition-transform duration-300 group-hover:scale-105'
                             />
                            
-                            <div className='absolute inset-0 bg-black flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300'>
+                            <div className='absolute inset-0 bg-black flex flex-col bg-opacity-40 items-center justify-center opacity-0 group-hover:opacity-40  transition-all duration-300'>
                                 <h3 className='text-white text-2xl font-bold'>{val.title}</h3>
                                 <p className='text-gray-200 text-sm mt-2 tracking-widest uppercase'>{val.subtitle}</p>
                             </div>

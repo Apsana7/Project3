@@ -46,10 +46,10 @@ function Services() {
         }
     ]
   return (
-    <div className='w-full h-fit py-8 bg-white flex items-center justify-center'>
-      <div className='flex flex-col mx-auto w-full sm:w-11/12 md:w-10/12  lg:w-9/12 items-center justify-center gap-12'>
+    <div className='w-full h-lvh  bg-gray-100 flex items-center justify-center'>
+      <div className='flex flex-col mx-auto w-full sm:w-11/12 md:w-10/12  lg:w-9/12 items-center justify-center gap-20'>
         <div className='text-5xl font-medium'>Our Services</div>
-        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-6 gap-y-6'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-16 gap-y-16'>
             {
                 data.map((val,i)=>{
                     return(

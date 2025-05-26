@@ -28,8 +28,8 @@ function ICS() {
   ];
 
   return (
-    <div className='w-full bg-white h-lvh flex items-center justify-center'>
-      <div className='w-10/12 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
+    <div className='w-full bg-white h-full py-10 flex items-center justify-center'>
+      <div className='w-10/12 mx-auto  py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
         {data.map((val, index) => (
           <div key={index} className='relative h-96 flex flex-col justify-center gap-6 p-6'>
            
@@ -39,10 +39,10 @@ function ICS() {
 
           
             <div className='relative inset-0 mt-10 flex flex-col gap-4'>
-              <div className='text-[#32DBC6] text-2xl sm:text-3xl lg:text-4xl font-semibold'>{val.title}</div>
-              <div className='text-gray-700'>{val.description}</div>
+              <div className='text-[#1cebd3] text-3xl sm:text-3xl lg:text-4xl font-little'>{val.title}</div>
+              <div className='text-gray-700 text-lg'>{val.description}</div>
 
-              <div className='flex flex-col gap-2'>
+              <div className='flex flex-col gap-4 text-lg'>
                 {val.points.map((value, idx) => (
                   <div key={idx} className='flex items-center gap-3 text-gray-800'>
                     <span className='text-[#32DBC6] text-lg sm:text-xl'>

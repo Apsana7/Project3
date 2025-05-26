@@ -11,7 +11,8 @@ function Layout() {
       <img
         src={here}
         alt="heroimage"
-        className="w-full h-screen object-fit bg-black opacity-90 fixed -z-50 top-0 bottom-0"
+                className="w-full h-screen object-cover fixed -z-50 top-0 bottom-0"
+        
       />
       <MainNav />
       <div>
