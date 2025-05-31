@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function SubHeader() {
   return (
-    <div className='py-2 inset-0 bg-black opacity-80 object-cover '>
+    <div className='py-2 inset-0 bg-gray-800 opacity-80 object-cover '>
       <div className='mx-auto flex w-10/12 items-center justify-between  text-white gap-4'>
         
             <div className='flex  gap-4'>

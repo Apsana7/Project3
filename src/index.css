@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
-
-
 @theme {
   --color-here-500: oklch(0.72 0.11 178);
 }
+
