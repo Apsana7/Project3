@@ -16,7 +16,7 @@ function Header() {
     <div className='z-10 w-full h-20 flex py-10 bg-white items-center justify-center'>
       <div className='mx-auto flex w-10/12 items-center justify-between'>
         <div className='text-3xl font-medium font-Comfortaa'>CrackIt.</div>
-        <div className='flex gap-16'>
+        <div className='flex gap-16 font-medium'>
           {Page.map((val, i) => (
             <Link
               key={i}

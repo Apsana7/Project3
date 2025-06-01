@@ -11,7 +11,7 @@ function Banner() {
 
           <div className="text-center text-white w-full max-w-4xl flex flex-col gap-10 items-center justify-center py-10">
 
-            <div className="w-full flex flex-col gap-6">
+            <div className="w-full flex flex-col gap-6 mt-20">
               <div className="text-3xl sm:text-4xl md:text-5xl flex flex-wrap gap-2 items-center justify-center font-semibold">
                 <span>We love to Build</span>
                 <span>
@@ -35,10 +35,10 @@ function Banner() {
                   />
                 </span>
               </div>
-              <div className="text-base sm:text-lg text-gray-100">Free Web template by <span className='text-teal-700'>Colorlib</span></div>
+              <div className="text-base sm:text-lg text-gray-100">Free Web template by <span className='text-teal-600'>Colorlib</span></div>
             </div>
 
-            <div className="px-6 py-3 rounded-2xl bg-blue-400 text-white cursor-pointer hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm sm:text-base">
+            <div className="px-6 py-3 rounded-2xl bg-teal-500 text-white cursor-pointer hover:bg-teal-700 hover:text-white transition-all duration-300 text-sm sm:text-base">
               Watch Video
             </div>
           </div>

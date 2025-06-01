@@ -45,8 +45,9 @@ function ContactUs() {
   return (
     <div className="w-full min-h-screen bg-gray-100  flex items-center justify-center">
       <div className="grid grid-cols-2 gap-20 w-8/12 py-20">
-  
-        <div className="p-4">
+
+
+        <div className="p-6">
           <Formik
             initialValues={{
               FirstName: '',
@@ -62,48 +63,82 @@ function ContactUs() {
             }}
           >
             {({ isSubmitting }) => (
-              <Form className="w-full flex flex-col gap-5 bg-white p-6 shadow-lg rounded-lg ">
-                <h1 className="text-3xl font-semibold text-center">Contact Us</h1>
+              <Form className="max-w-3xl mx-auto bg-white p-10 rounded-2xl shadow-md">
+                <h1 className="text-2xl font-semibold text-gray-800 mb-6">Contact Form</h1>
 
-                {personalDetails.map((field, index) => (
-                  <div key={index} className="flex flex-col items-center w-full">
-                    <label
-                      htmlFor={field.name}
-                      className="text-gray-700 font-medium self-start mb-1 max-w-md"
-                    >
-                      {field.name}
-                    </label>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="FirstName" className="block text-gray-700 mb-2">First Name</label>
                     <Field
-                      as={field.type === 'textarea' ? 'textarea' : 'input'}
-                      id={field.name}
-                      name={field.name}
-                      type={field.type}
-                      placeholder={field.placeholder}
-                      className={`p-3 border border-gray-500 resize-none rounded-md w-full max-w-md ${
-                        field.type === 'textarea' ? 'h-32' : ''
-                      }`}
+                      name="FirstName"
+                      type="text"
+                      placeholder="First Name"
+                      className="w-full p-3 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-400"
                     />
-                    <ErrorMessage
-                      name={field.name}
-                      component="div"
-                      className="text-red-600 text-sm mt-1 self-start max-w-md"
-                    />
+                    <ErrorMessage name="FirstName" component="div" className="text-red-500 text-sm mt-1" />
                   </div>
-                ))}
 
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="bg-teal-500 text-white p-3 rounded-md font-semibold transition-all w-fit max-w-md self-center"
-                >
-                  Submit
-                </button>
+                  <div>
+                    <label htmlFor="LastName" className="block text-gray-700 mb-2">Last Name</label>
+                    <Field
+                      name="LastName"
+                      type="text"
+                      placeholder="Last Name"
+                      className="w-full p-3 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-400"
+                    />
+                    <ErrorMessage name="LastName" component="div" className="text-red-500 text-sm mt-1" />
+                  </div>
+                </div>
+
+                <div className="mt-6">
+                  <label htmlFor="Email" className="block text-gray-700 mb-2">Email</label>
+                  <Field
+                    name="Email"
+                    type="email"
+                    placeholder="Email"
+                    className="w-full p-3 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-400"
+                  />
+                  <ErrorMessage name="Email" component="div" className="text-red-500 text-sm mt-1" />
+                </div>
+
+                <div className="mt-6">
+                  <label htmlFor="Subject" className="block text-gray-700 mb-2">Subject</label>
+                  <Field
+                    name="Subject"
+                    type="text"
+                    placeholder="Subject"
+                    className="w-full p-3 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-teal-400"
+                  />
+                  <ErrorMessage name="Subject" component="div" className="text-red-500 text-sm mt-1" />
+                </div>
+
+                <div className="mt-6">
+                  <label htmlFor="Message" className="block text-gray-700 mb-2">Message</label>
+                  <Field
+                    as="textarea"
+                    name="Message"
+                    placeholder="Write your notes or questions here..."
+                    className="w-full p-4 border border-gray-200 rounded-2xl h-32 resize-none focus:outline-none focus:ring-2 focus:ring-teal-400"
+                  />
+                  <ErrorMessage name="Message" component="div" className="text-red-500 text-sm mt-1" />
+                </div>
+
+                <div className="mt-8 flex justify-start">
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="bg-gradient-to-r from-teal-400 to-teal-500 text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-all"
+                  >
+                    SEND MESSAGE
+                  </button>
+                </div>
               </Form>
             )}
           </Formik>
         </div>
 
-       
+
+
         <div className="bg-white h-fit flex flex-col gap-4 p-4 shadow-md rounded-md">
           <div className="flex flex-col gap-2">
             <div className="text-lg font-medium text-gray-600">Address</div>

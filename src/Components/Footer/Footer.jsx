@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import { FcLike } from "react-icons/fc";
 
 function Footer() {
   const features = [
@@ -31,7 +32,7 @@ function Footer() {
           </div>
 
     
-          <div>
+          <div className=' flex flex-col items-center'>
             <h3 className='text-lg font-semibold mb-3'>Features</h3>
             <div className='space-y-2'>
               {features.map((item, index) => (
@@ -65,7 +66,7 @@ function Footer() {
               <input
                 type="email"
                 placeholder='Enter your email'
-                className='w-full px-4 py-2  rounded-xl border-2'
+                className='w-full px-4 py-2  rounded-xl border-2 border-gray-700'
               />
               <button className='px-4 py-2 bg-teal-500 text-white rounded-xl hover:bg-teal-600 transition'>
                 Send
@@ -76,8 +77,8 @@ function Footer() {
         </div>
 
      
-        <div className='text-center text-sm text-gray-500 mt-6'>
-           2025 All rights reserved | Template made with  by Colorlib
+        <div className='text-center text-sm text-gray-500 mt-6 flex gap-2 items-center justify-center'>
+           2025 All rights reserved | Template made with <span><FcLike /></span> by Apsana
         </div>
       </div>
     </footer>
