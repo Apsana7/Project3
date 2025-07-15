@@ -3,7 +3,7 @@ import image from '../../../assets/LP2.webp'
 import { IoExtensionPuzzleSharp } from "react-icons/io5";
 import { FaLaptopFile } from "react-icons/fa6";
 
-function About() {
+function AboutUs() {
   return (
     <div className='w-full min-h-screen bg-white flex items-center justify-center'>
       <div className='w-11/12 max-w-7xl flex mx-auto p-4 md:p-8'>
@@ -35,4 +35,4 @@ function About() {
   )
 }
 
-export default About
+export default AboutUs

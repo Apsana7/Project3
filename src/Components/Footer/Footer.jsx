@@ -32,9 +32,9 @@ function Footer() {
           </div>
 
     
-          <div className=' flex flex-col items-center'>
-            <h3 className='text-lg font-semibold mb-3'>Features</h3>
-            <div className='space-y-2'>
+          <div className=' flex flex-col lg:items-center sm:text-start'>
+            <h3 className='text-lg font-semibold mb-3 '>Features</h3>
+            <div className='flex flex-col gap-2'>
               {features.map((item, index) => (
                 <div key={index}>
                   <Link to={item.path} className='text-sm text-gray-300 hover:text-white transition'>

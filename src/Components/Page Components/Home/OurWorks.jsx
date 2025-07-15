@@ -41,7 +41,7 @@ function OurWorks() {
     ]
 
     return (
-        <div className='bg-gray-50 w-full h-fit flex items-center justify-center'>
+        <div className='bg-gray-50 w-full h-full flex items-center justify-center'>
             <div className='w-full mx-6 flex flex-col items-center justify-center py-16'>
             
                 <div className='flex flex-col gap-6 items-center'>

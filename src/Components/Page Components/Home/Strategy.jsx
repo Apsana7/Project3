@@ -35,7 +35,7 @@ function Strategy() {
 
     ]
     return (
-        <div className='w-full h-lvh flex items-center justify-center bg-gray-100'>
+        <div className='w-full h-full flex items-center justify-center bg-gray-100 py-12'>
             <div className='w-11/12 md:w-10/12 flex flex-col md:flex-row mx-auto bg-black p-4 md:p-10 h-auto md:h-8/12 rounded-lg shadow-lg'>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4    items-center'>

@@ -137,9 +137,9 @@ const responsive = {
 
 
   return (
-    <div className='bg-white w-full h-lvh flex items-center justify-center'>
-      <div className=" w-10/12 h-3/5 flex justify-center items-center flex-col">
-        <h2 className="font-semibold text-4xl">Testimonial</h2>
+    <div className='bg-white w-full h-full pb-3 flex items-center justify-center '>
+      <div className=" w-10/12 h-3/5 flex justify-center gap-3 items-center flex-col md:pt-6 lg:py-16">
+        <h2 className="font-semibold text-5xl py-5">Testimonial</h2>
         <Carousel className="w-3/5 h-4/5"
         arrows={false}
         autoPlaySpeed={5000}
@@ -150,37 +150,23 @@ const responsive = {
         swipeable
         draggable
         containerClass="container mx-auto"
-        itemClass="px-4"
         responsive={responsive}
       >
         {
           testimonials.map((val,i)=>{
             return(
               <div key={i} className="flex flex-col gap-6">
-               
-                  <div className=" itallic text-justify text-2xl text-gray-700 italic">"{val.quote}"</div>
-                  <div className="flex items-center justify-center gap-4">
+                  <div className=" itallic lg:text-justify lg:text-2xl text-gray-700 italic md:text-xl sm:text-lg">"{val.quote}"</div>
+                  <div className="flex pb-8 items-center justify-center gap-4">
                     <img src={val.image} alt="image" className="h-16 w-16 rounded-full object-cover"/>
                     <div className="text-gray-700">{val.name}</div>
                   </div>
                 </div>
-             
-
             )
           })
         }
-
-
-
-
-
       </Carousel>
-
-
-
-
       </div>
-      
     </div>
   )
 }

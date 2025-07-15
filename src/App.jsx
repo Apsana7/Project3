@@ -20,11 +20,11 @@ function App() {
      <Routes>
         <Route element={<Layout />}>
           <Route path='/' element={<Home />}/>
-         <Route path='/Work' element={<Work/>}></Route>
+         {/* <Route path='/Work' element={<Work/>}></Route>
           <Route path='/Services' element={<Services/>}></Route>
           <Route path='/About' element={<About/>}></Route>
           <Route path='/Blog' element={<Blog/>}></Route>
-          <Route path='/Contact' element={<Contact/>}></Route>   
+          <Route path='/Contact' element={<Contact/>}></Route>    */}
         </Route>
 
       </Routes>

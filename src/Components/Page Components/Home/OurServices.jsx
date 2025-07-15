@@ -6,7 +6,7 @@ import { RiPaintBrushLine } from "react-icons/ri";
 import { IoExtensionPuzzleSharp } from "react-icons/io5";
 import { FaLaptopFile } from "react-icons/fa6";
 
-function Services() {
+function OurServices() {
     const data = [
         {
             icon:<FaLaptop />,
@@ -46,14 +46,14 @@ function Services() {
         }
     ]
   return (
-    <div className='w-full h-lvh  bg-gray-100 flex items-center justify-center'>
-      <div className='flex flex-col mx-auto w-full sm:w-11/12 md:w-10/12  lg:w-9/12 items-center justify-center gap-20'>
+    <div className='w-full h-full  bg-gray-100 flex items-center justify-center'>
+      <div className='flex flex-col mx-auto w-full sm:w-11/12 md:w-10/12  lg:w-9/12 items-center justify-center py-16 gap-20'>
         <div className='text-5xl font-medium'>Our Services</div>
-        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-16 gap-y-16'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-8 sm:gap-5  '>
             {
                 data.map((val,i)=>{
                     return(
-                        <div key={i} className='flex flex-col sm:flex-row justify-center gap-6 p-2'>
+                        <div key={i} className='flex flex-col sm:flex-row justify-center lg:gap-8 sm:gap-4 px-12 py-5'>
                             <div className='text-teal-500 lg:text-5xl sm:text-4xl text-3xl'>{val.icon}</div>
                             <div className='flex flex-col gap-4'>
                                 <div className='text-2xl text-gray-700'>{val.title}</div>
@@ -70,4 +70,4 @@ function Services() {
   )
 }
 
-export default Services
+export default OurServices

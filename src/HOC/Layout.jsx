@@ -11,15 +11,13 @@ function Layout() {
       <img
         src={here}
         alt="heroimage"
-              
-                className='-z-50 bottom-0 top-0 inset-0 w-full h-full object-cover opacity-80 fixed '
-        
+        className='-z-50 bottom-0 top-0 inset-0 w-full h-full object-cover opacity-80 fixed '
       />
       <MainNav />
       <div>
         <Outlet />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }
